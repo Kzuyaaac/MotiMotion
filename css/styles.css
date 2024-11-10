@@ -80,14 +80,16 @@ p, ul, table {
     align-items: center;
     margin-top: 20px;
     flex-wrap: wrap;
+    gap: 15px; /* Menambahkan jarak antar gambar */
     position: relative;
 }
 
 .gallery img {
     width: 100%;
+    height: auto;
     max-width: 700px;
-    height: 380px;
-    object-fit: cover;
+    aspect-ratio: 16 / 9; /* Menambahkan rasio 16:9 secara otomatis */
+    object-fit: cover; /* Agar gambar tetap terpotong dengan proporsional */
     cursor: pointer;
     border-radius: 5px;
     border: 2px solid #444;
